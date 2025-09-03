@@ -11,6 +11,7 @@ Es una herramienta web simple y directa, creada con Python y FastAPI, diseñada 
 **Red:** Python-nmap
 
 ## Archivos
+```
 the_ip_researcher/
 ├── main.py
 ├── requirements.txt
@@ -19,4 +20,4 @@ the_ip_researcher/
 └── static/
     ├── css/
             └── style.css
-    
+```    

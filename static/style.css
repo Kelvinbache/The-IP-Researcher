@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.button-ip {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-ip:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button-conector {
+  background-color: #28a745;
+  color: white;
+}
+
+.button-conector:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.button-github {
+  background-color: #333;
+  color: white;
+}
+
+.button-github:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+.button-creador {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.button-creador:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
