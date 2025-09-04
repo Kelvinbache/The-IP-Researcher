@@ -2,6 +2,12 @@ const buttons_ip = document.getElementById("ip-button");
 const buttons_connector = document.getElementById("connector-button");
 const container = document.getElementById("container_content");
 let content = "";
+const ul = document.createElement("ul");
+const li = document.createElement("li");
+
+ul.appendChild(li);
+ul.className = "list";
+container.appendChild(ul);
 
 // block buttons
 function loading() {
@@ -31,14 +37,8 @@ async function ip() {
   try {
     const scanner = await fetch("http://127.0.0.1:8000/scanner/ip");
     const data = await scanner.json();
-    const ul = document.createElement("ul");
-    const li = document.createElement("li");
     content = JSON.stringify(data).replace(/[{}"]/g, "").replace(/,/g, "\n") + "\n";
     li.textContent = content;
-
-    ul.appendChild(li);
-    ul.className = "list";
-    container.appendChild(ul);
 
   } catch (error) {
     console.error("Error fetching IP data:", error);
@@ -54,14 +54,10 @@ async function wifi() {
   try {
     const scanner = await fetch("http://127.0.0.1:8000/scanner/wifi");
     const data = await scanner.json();
-    const ul = document.createElement("ul");
-    const li = document.createElement("li");
-    content += JSON.stringify(data).replace(/[{}"]/g, "").replace(/,/g, "\n");
+
+    content = JSON.stringify(data).replace(/[{}"]/g, "").replace(/,/g, "\n");
     li.textContent = content;
 
-    ul.appendChild(li);
-    ul.className = "list";
-    container.appendChild(ul);
   } catch (error) {
     console.error("Error fetching WiFi data:", error);
   } finally {

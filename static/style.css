@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .top-section {
@@ -17,6 +18,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  margin: 23px auto;
 }
 
 .center-section {
@@ -99,11 +101,16 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 21px auto;
+  margin: 30px auto;
 }
 
 .list {
   list-style-type: none;
   padding: 0;
   text-align: center;
+}
+
+.button-link {
+  color: white;
+  text-decoration: none;
 }

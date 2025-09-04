@@ -3,19 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css" />
     <title>Página con Botones</title>
   </head>
   <body>
     <div class="top-section">
-      <button class="button button-github">GitHub</button>
-      <button class="button button-creador">Creador</button>
+      <button class="button button-github">
+        <a
+          href="https://github.com/Kelvinbache/The-IP-Researcher"
+          class="button-link"
+          >GitHub</a
+        >
+      </button>
+      <button class="button button-creador">
+        <a href="https://github.com/Kelvinbache" class="button-link">Creador</a>
+      </button>
     </div>
+    
+    
+    <h2>Bienvenido a investigacion de IP</h2>
+    <h4>Aqui podras ver tu propia IP y de donde estas conectado</h4>
+  
     <div class="container_content" id="container_content"></div>
+    
     <div class="center-section">
       <div class="container">
         <button class="button button-ip" id="ip-button">IP</button>
-        <button class="button button-connector" id="connector-button">Conector</button>
+        <button class="button button-connector" id="connector-button">
+          Conector
+        </button>
       </div>
     </div>
     <script src="/static/index.js"></script>
