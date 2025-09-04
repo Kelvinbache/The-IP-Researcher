@@ -28,7 +28,3 @@ def scanner_wifi(request: Request):
         return scanner.wifi(request.client.host)
     except Exception:
         raise HTTPException(status_code=404, detail="Not found devices")
-
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", port=8000, log_level="info",  server_header=False , reload=True)
