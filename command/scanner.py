@@ -1,11 +1,5 @@
 import nmap
 
-#Dns 
-def ip(host):
-    nm = nmap.PortScanner()
-    ip = nm.scan(host + "/24", arguments="-sO -PE -PA21,23,80,3389")
-    return ip
-
 
 #Dns 
 def wifi(host):
@@ -19,12 +13,10 @@ def wifi(host):
     
             for os in nm[red]["osmatch"]:
                 if "Android" in os["name"] or "iOS" in os["name"] or "Windows" in os["name"] or "Linux" in os["name"]:
-                    decisive["system"] = os['name']
+                    decisive["System"] = os['name']
                     break
                     
-    if decisive.get("system") is None:
+    if decisive.get("System") is None:
           return "Not found devices"
     else:
           return decisive    
-    
-    

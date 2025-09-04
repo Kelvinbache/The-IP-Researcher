@@ -54,12 +54,12 @@ body {
   transform: translateY(-2px);
 }
 
-.button-conector {
+.button-connector {
   background-color: #28a745;
   color: white;
 }
 
-.button-conector:hover {
+.button-connector:hover {
   background-color: #1e7e34;
   transform: translateY(-2px);
 }
@@ -82,4 +82,28 @@ body {
 .button-creador:hover {
   background-color: #ff5252;
   transform: translateY(-2px);
+}
+
+.loading {
+  background-color: #ccc !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+/* content */
+.container_content {
+  width: 48%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 21px auto;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }

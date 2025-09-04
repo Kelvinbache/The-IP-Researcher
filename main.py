@@ -18,7 +18,7 @@ def controller(request: Request):
 @app.get("/scanner/ip")
 def scanner_ip(request: Request):
     try:
-        return scanner.ip(request.client.host)
+        return {"IP": request.client.host}
     except Exception:
             raise HTTPException(status_code=404, detail="Not found iP")
 
