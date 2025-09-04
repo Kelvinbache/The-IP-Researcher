@@ -20,9 +20,3 @@ the_ip_researcher/
 └── static/
     ├── css/
             └── style.css
-<<<<<<< HEAD
-```    
-=======
-```
-    
->>>>>>> e497c3c3f366243ed7575cbcbfbba0903c71812b
