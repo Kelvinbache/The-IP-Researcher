@@ -35,7 +35,7 @@ async function ip() {
   loading();
 
   try {
-    const scanner = await fetch("http://127.0.0.1:8000/scanner/ip");
+    const scanner = await fetch("https://the-ip-researcher.onrender.com/scanner/ip");
     const data = await scanner.json();
     content = JSON.stringify(data).replace(/[{}"]/g, "").replace(/,/g, "\n") + "\n";
     li.textContent = content;
@@ -52,7 +52,7 @@ async function wifi() {
   loading();
 
   try {
-    const scanner = await fetch("http://127.0.0.1:8000/scanner/wifi");
+    const scanner = await fetch("https://the-ip-researcher.onrender.com/scanner/wifi");
     const data = await scanner.json();
 
     content = JSON.stringify(data).replace(/[{}"]/g, "").replace(/,/g, "\n");
